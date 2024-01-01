@@ -1,0 +1,23 @@
+https://imgur.com/592JikO
+
+What is a server? 
+ANS:A server is a specialized computer or software that provides services, resources, or functionalities to other computers, devices, or users within a network.
+ 
+ What is the role of the domain name?
+ ANS: A domain name serves as a human-readable address used to identify and access resources on the internet.
+ 
+ What is the role of the application server?
+ Ans: the role is to provides an environment for the development, deployment, and execution of applications.
+
+ What is the role of the database?
+ANS: the role is to serves as a structured repository or organized collection of data that is systematically stored, managed, and accessed by computer systems
+
+What is the server using to communicate with the computer of the user requesting the website?
+ANS: The server uses the computer's HTTP (HyperText Transfer Protocol) to communicate.
+
+THE ISSUES:
+SPOF: This is the Single Point of Failure. The entire infrastructure operates on a solitary server. Consequently, should this server encounter an issue, the entire website will cease to function.
+
+DOWNTIME: When it becomes necessary to assess the server's performance and perform maintenance, restarting the server becomes essential, leading to website downtime as a consequence.
+
+When a single server experiences a surge in incoming traffic, it causes the website to crash. This occurs due to the limited capacity of the infrastructure to handle higher volumes of traffic.

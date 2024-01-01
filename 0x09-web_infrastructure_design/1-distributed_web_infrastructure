@@ -1,0 +1,7 @@
+https://imgur.com/2TXZNRa
+
+At this stage, an additional server and a load balancer have been incorporated to efficiently distribute and manage traffic. The DNS directs traffic to the load balancer's IP address.
+
+The load balancer's role is to evenly distribute incoming traffic between the two servers. This ensures balanced traffic handling.
+
+When a single server encounters a sudden influx of traffic, the website crashes due to the infrastructure's restricted capacity to manage higher traffic volumes.

@@ -1,0 +1,22 @@
+One Server Addition:
+
+Purpose: To expand the infrastructure's capacity and handle increased workload.
+Explanation: The addition of a new server aims to alleviate the load on existing systems and prevent single-point failures by distributing tasks across multiple servers.
+
+One Load-Balancer (HAProxy) Configured as a Cluster:
+
+Purpose: To evenly distribute incoming traffic among the servers.
+Explanation: HAProxy, configured as a cluster with multiple instances, enhances reliability by ensuring continuous availability and load distribution. This setup improves system performance and mitigates potential traffic overload on individual servers.
+
+Component Splitting with Dedicated Servers (Web Server, Application Server, Database):
+
+Purpose: To segregate and allocate specific tasks to dedicated servers, optimizing performance and security.
+Explanation:
+Web Server: Separating the web server enables the efficient handling of HTTP requests and the delivery of web content to users.
+Application Server: Having a dedicated server for application processing ensures smoother execution of application-specific tasks, such as processing business logic and managing user interactions.
+Database Server: Allocating a separate server for the database enhances data management, security, and scalability. It allows for more efficient handling of data storage, retrieval, and management.
+By implementing these elements, the infrastructure aims to achieve:
+
+- Enhanced performance and scalability by distributing tasks across multiple servers.
+- Improved reliability and fault tolerance through load balancing and clustering mechanisms.
+- Isolation and dedicated resources for specific functionalities, contributing to better resource utilization and security. When a single server encounters a sudden influx of traffic, the website crashes due to the infrastructure's restricted capacity to manage higher traffic volumes.

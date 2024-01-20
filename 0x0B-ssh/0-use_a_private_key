@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #Script to connect the remote serve with the ssh key
 
-ssh -i ~/.ssh/school ubuntu@18.206.198.30
+ssh -i ~/.ssh/school ubuntu@18.235.234.134

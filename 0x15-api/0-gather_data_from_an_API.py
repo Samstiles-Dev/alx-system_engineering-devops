@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Fetch data from API, provide progress of d TODO list based on d employee's ID.
+Request TODO list progress given employee ID from API
 """
 import requests
 from sys import argv

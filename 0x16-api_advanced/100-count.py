@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Get all posts recursively and count words """
+"""This get all posts recursively n count words """
 
 import requests
 

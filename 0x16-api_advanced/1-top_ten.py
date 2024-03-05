@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module that prints title of hot subbreddit"""
+"""A module d prints title of hot subbreddit"""
 
 import requests
 

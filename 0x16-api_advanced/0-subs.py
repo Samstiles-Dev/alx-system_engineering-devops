@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""Module that scrapes reddit api"""
+"""A module that scrapes reddit api"""
 
 import requests
 
 
 def number_of_subscribers(subreddit):
     """
-       Scrapes reddit api and gets the number of subscribers
+       This scrapes reddit api n gets d num of subscribers
     """
     if subreddit is None or not isinstance(subreddit, str):
         return 0

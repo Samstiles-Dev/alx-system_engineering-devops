@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""Script that returns nums of
-subs of a subreddit passed to it"""
+"""Script that returns the numbers of
+subscribers of a subreddit passed to it"""
 
 import requests
 

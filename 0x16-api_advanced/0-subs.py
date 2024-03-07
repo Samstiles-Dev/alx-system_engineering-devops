@@ -1,26 +1,22 @@
 #!/usr/bin/python3
-"""A module that scrapes reddit api"""
+"""Script that returns nums of
+subs of a subreddit passed to it"""
 
 import requests
 
 
 def number_of_subscribers(subreddit):
-    """
-       This scrapes reddit api n gets d num of subscribers
-    """
-    if subreddit is None or not isinstance(subreddit, str):
+    """Function that returns the numbers of
+    subscribers of a subreddit passed to it"""
+
+    apiUrl = "https://reddit.com/r/{}/about.json".format(subreddit)
+    userAgent = "Mozilla/5.0"
+
+    response = requests.get(apiUrl, headers={"user-agent": userAgent})
+    if not response:
         return 0
-    header = {'User-Agent': 'Get subscribers info'}
-    url = f'https://www.reddit.com/r/{subreddit}/about.json'
-
-    data = requests.get(url, headers=header, allow_redirects=False)
-
-    if data.status_code == 200:
-        try:
-            data = data.json()
-            subscribers = data['data']['subscribers']
-            return subscribers
-        except (KeyError, ValueError):
-            return 0
+    retValue = response.json().get('data').get('subscribers')
+    if retValue:
+        return retValue
     else:
         return 0
